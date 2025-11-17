@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Tools",
+        "description": "List of tools available for generating the response. Each tool is uniquely identified by a name ('name' field) and is associated with a description ('description' field) that explains the purpose of the tool and how it works.",
+        "value": [
+            {
+                "name": "euclidian_distance(A,B)",
+                "description": "This function calculates the distance between two spatial locations. Let A=[x_1,y_1] and B=[x_2,y_2] be the coordinates of two spatial locations. The distance between these two points can be computed as follows: euclidian_distance(A,B) = sqrt((x_2 - x_1)^2 + (y_2 - y1)^2)."
+            }
+        ]
+    },
+    {
+        "name": "Scene",
+        "description": "Description of the scene and its content",
+        "value": [
+            {
+                "name": "Spatial Locations",
+                "description": "Spatial locations in the scene where objects can be placed. Each location is defined as a grid and is uniquely identified by a name ('name' field), along with a description ('description' field) and a set of coordinates ('locations' field) that indicate where objects can be placed.",
+                "value": [
+                    {
+                        "name": "grid",
+                        "description": "A 4×4 grid, i.e., a grid composed of 4 rows and 4 columns. Row 4 and column 4 are referred to as the last row and last column, respectively. Each position within the grid is uniquely identified by a pair of integers. For example, the pair (i, j) represents the position at the i-th row and j-th column. The 'locations' field contains the list of such pairs that define the available positions in the grid.",
+                        "locations": CELL_COORDs
+                    }
+                ]
+            },
+            {
+                "name": "Objects",
+                "description": "A complete list of object types available in the scene is provided. For each type, a full list of features (in the 'features' field) is included. Each feature is represented as an object of the form {'name': 'feature_name', 'value': feature_value}, where the 'value' can be either a string or a numerical value. The feature list also includes the 'size', which indicates the number of grid positions occupied by the object when placed in a specific location. Moreover, each object has its own weight ('weight' field) that depends on its 'color' and 'shape'.",
+                "value": OBJECT_LIST
+            },
+            {
+                "name": "Agents",
+                "description": "A detailed list of agents in the scene is provided. Each agent is uniquely identified by an ID ('id' field). Additionally, for each agent, a series of details is provided, including the type ('type' field), which can be either 'human' or 'robot'; the position ('position' field); the maximum ('max' field) and minimum ('min' field) velocities ('velocity' field); the workspace amplitude ('workspace_amplitude' field), which may be finite or infinite; and the list of actions the agent can perform ('action' field). Each action is characterized by a name ('name' field) and a duration ('duration' field). The duration field explains how to compute the total duration based on the available data.",
+                "value": [
+                    {
+                        "id": "robot#1",
+                        "type": "robot",
+                        "position": R1_COORDs,
+                        "workspace_amplitude": "infinite",
+                        "velocity": {
+                            "min": R1_MIN,
+                            "max": R1_MAX
+                        },
+                        "actions": [
+                            {
+                                "name": "PickAndPlace",
+                                "duration": "euclidian_distance(object_initial_position,agent_initial_position)/agent_velocity + 7.0 seconds for picking + euclidian_distance(object_initial_position,desired_position)/agent_velocity + 7.0 seconds for placing + 10.0 seconds allotted for extra operations or movements."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "human#1",
+                        "type": "human",
+                        "position": H1_COORDs,
+                        "workspace_amplitude": "infinite",
+                        "velocity": {
+                            "min": H1_MIN,
+                            "max": H1_MAX
+                        },
+                        "actions": [
+                            {
+                                "name": "PickAndPlace",
+                                "duration": "euclidian_distance(object_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + euclidian_distance(object_initial_position,desired_position)/agent_velocity + 5.0 seconds for placing + 0.0 seconds allotted for extra operations or movements."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Preferences",
+        "description": "Preferences of the agents to consider when responding to a request. Each preference can be seen as a soft constraint, meaning its fulfillment is not mandatory.",
+        "value": []
+    },
+    {
+        "name": "Directives",
+        "description": "List of rules to consider when responding to a request. Each rule represents a hard constraint, meaning its fulfillment is mandatory.",
+        "value": [
+            "None of the following rules can be violated.",
+            "Each position can be occupied by at most one object; no positions can be shared.",
+            "Every object can be used only once.",
+            "The bottom portion of the structure must occupy the lower rows of the grid.",
+            "Always begin structure assembly from the last row and then proceed upward.",
+            "Each agent can perform only the actions listed in its 'actions' field.",
+            "Before assigning an action to an agent, verify that the involved object is within the agent's workspace.",
+            "Actions involving objects outside the workspace cannot be assigned to the agent. An object is considered within an agent's workspace if and only if it satisfies the following condition: euclidian_distance(object_position,agent_position) < agent_workspace_amplitude.",
+            "Specify the order in which each action must be performed.",
+            "Assign the same order value to all actions that can be performed simultaneously.",
+            "MAXIMIZE the number of actions performed simultaneously",
+            "After each action, every agent resets to its starting position. Consequently, distances MUST always be calculated from that initial position, not from the agent’s final location after the previous task.",
+            "PROVIDE an explicit, stepwise explanation of how the allocation is performed.",
+            "At each step, verify that the proposed actions comply with all given rules.",
+            "If any check fails, make a correction and verify again. Repeat this process until every check is satisfied, including for the final plan.",
+            "Each final plan must be enclosed in '<plan>...</plan>' tags when presenting the solution.",
+            "Use the tags <plan> and </plan> EXCLUSIVELY to wrap the final plan; they MUST NOT appear anywhere else in your output.",
+            "The final plan must be formatted in JSON as follows: PLAN_TEMPLATE"
+        ]
+    }
+]

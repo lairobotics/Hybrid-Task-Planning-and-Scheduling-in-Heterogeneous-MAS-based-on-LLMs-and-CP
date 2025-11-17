@@ -1,0 +1,150 @@
+[
+    {
+        "name": "Tools",
+        "description": "List of tools available for generating the response. Each tool is uniquely identified by a name ('name' field) and is associated with a description ('description' field) that explains the purpose of the tool and how it works.",
+        "value": [
+            {
+                "name": "euclidian_distance(A,B)",
+                "description": "This function calculates the distance between two spatial locations. Let A=[x_1,y_1] and B=[x_2,y_2] be the coordinates of two spatial locations. The distance between these two points can be computed as follows: euclidian_distance(A,B) = sqrt((x_2 - x_1)^2 + (y_2 - y1)^2)."
+            }
+        ]
+    },
+    {
+        "name": "Scene",
+        "description": "Description of the scene and its content",
+        "value": [
+            {
+                "name": "Spatial Locations",
+                "description": "Spatial Locations in the scene where objects can be placed. Each location is associated with a description ('description' field) and is uniquely identified by a name ('name' field) and a spatial position ('position' field). The position is expressed as [x_value, y_value], i.e., in terms of the x coordinate (x_value) and the y coordinate (y_value).",
+                "value": [
+                    {
+                        "name": "red_box",
+                        "description": "A red box, sealed with a red lid and designed to store objects of various sizes, shapes, and weights.",
+                        "position": RED_BOX_COORDs
+                    },
+                    {
+                        "name": "yellow_box",
+                        "description": "A yellow box, sealed with a yellow lid and designed to store objects of various sizes, shapes, and weights.",
+                        "position": YELLOW_BOX_COORDs
+                    },
+                    {
+                        "name": "blue_box",
+                        "description": "A blue box, sealed with a blue lid and designed to store objects of various sizes, shapes, and weights.",
+                        "position": BLUE_BOX_COORDs
+                    },
+                    {
+                        "name": "green_box",
+                        "description": "A green box, sealed with a green lid and designed to store objects of various sizes, shapes, and weights.",
+                        "position": GREEN_BOX_COORDs
+                    }
+                ]
+            },
+            {
+                "name": "Objects",
+                "description": "A complete list of all the objects available in the scene. Each object is associated with a full list of its features ('features' field) and is uniquely identified by a name ('name' field) and a spatial position ('position' field). Each feature in the list is formatted as {'name': 'feature_name', 'value': feature_value}. The value can be either a string or a numerical value. Moreover, each object has its own weight ('weight' field) that depends on its 'color' and 'shape'.",
+                "value": OBJECT_LIST
+            },
+            {
+                "name": "Agents",
+                "description": "A detailed list of agents in the scene is provided. Each agent is uniquely identified by an ID ('id' field). Additionally, for each agent, a series of details is provided, including the type ('type' field), which can be either 'human' or 'robot'; the position ('position' field); the maximum ('max' field) and minimum ('min' field) velocities ('velocity' field); the workspace amplitude ('workspace_amplitude' field), which may be finite or infinite; and the list of actions the agent can perform ('action' field). Each action is characterized by a name ('name' field) and a duration ('duration' field). The duration field explains how to compute the total duration based on the available data.",
+                "value": [
+                    {
+                        "id": "robot#1",
+                        "type": "robot",
+                        "position": R1_COORDs,
+                        "workspace_amplitude": "infinite",
+                        "velocity": {
+                            "min": R1_MIN,
+                            "max": R1_MAX
+                        },
+                        "actions": [
+                            {
+                                "name": "PickAndPlace",
+                                "duration": "euclidian_distance(object_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + euclidian_distance(object_initial_position,desired_position)/agent_velocity + 5.0 seconds for placing + 7.0 seconds allotted for extra operations or movements."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "robot#2",
+                        "type": "robot",
+                        "position": R2_COORDs,
+                        "workspace_amplitude": "infinite",
+                        "velocity": {
+                            "min": R2_MIN,
+                            "max": R2_MAX
+                        },
+                        "actions": [
+                            {
+                                "name": "PickAndPlace",
+                                "duration": "euclidian_distance(object_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + euclidian_distance(object_initial_position,desired_position)/agent_velocity + 5.0 seconds for placing + 7.0 seconds allotted for extra operations or movements."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "human#1",
+                        "type": "human",
+                        "position": H1_COORDs,
+                        "workspace_amplitude": "infinite",
+                        "velocity": {
+                            "min": H1_MIN,
+                            "max": H1_MAX
+                        },
+                        "actions": [
+                            {
+                                "name": "PickAndPlace",
+                                "duration": "euclidian_distance(object_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + euclidian_distance(object_initial_position,desired_position)/agent_velocity + 5.0 seconds for placing + 0.0 seconds allotted for extra operations or movements."
+                            },
+                            {
+                                "name": "OpenBox",
+                                "duration": "euclidian_distance(lid_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + 5.0 seconds for placing + 0.0 seconds allotted for extra operations or movements."
+                            },
+                            {
+                                "name": "CloseBox",
+                                "duration": "euclidian_distance(lid_initial_position,agent_initial_position)/agent_velocity + 5.0 seconds for picking + 5.0 seconds for placing + 0.0 seconds allotted for extra operations or movements."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Preferences",
+        "description": "Preferences of the agents to consider when responding to a request. Each preference can be seen as a soft constraint, meaning its fulfillment is not mandatory.",
+        "value": []
+    },
+    {
+        "name": "Directives",
+        "description": "List of rules to consider when responding to a request. Each rule represents a hard constraint, meaning its fulfillment is mandatory.",
+        "value": [
+            "None of the following rules can be violated.",
+            "At the start, each box is closed with its lid firmly in place.",
+            "At the end, each box must be re-sealed with its lid correctly placed on top.",
+            "Each box must contain at least one object of every color. Objects that match the color of the box must be placed first.",
+            "Each box must contain at least 3 objects, and at least one of them must be a parallelepiped.",
+            "Each box can contain at most 5 objects.",
+            "Lids must not be included in the total count of objects placed inside a box.",
+            "Every object can be used only once.",
+            "Allocate actions among the agents.",
+            "Each agent can perform only the actions listed in its 'actions' field.",
+            "Robots cannot handle lids.",
+            "The human operators’ velocity varies according to the following relationship: max_agent_velocity/[1 + 0.01*(object_weight - 3)]",
+            "Before assigning an action to an agent, verify that the involved object is within the agent's workspace.",
+            "Actions involving objects outside the workspace cannot be assigned to the agent. An object is considered within an agent's workspace if and only if it satisfies the following condition: euclidian_distance(object_position,agent_position) < agent_workspace_amplitude.",
+            "Specify the order in which each action must be performed.",
+            "Assign the same order value to all actions that can be performed simultaneously.",
+            "An agent CANNOT carry out multiple actions simultaneously.",
+            "Set the start and end times of the actions so that every order-n action finishes before any order-(n + 1) action begins, regardless of which agents carry them out.",
+            "The agent_velocity MUST NOT exceed the specified maximum value (velocity's 'max' subfield) nor fall below the specified minimum value (velocity's 'min' subfield).",
+            "After each action, every agent resets to its starting position. Consequently, distances MUST always be calculated from that initial position, not from the agent’s final location after the previous task.",
+            "When specified in the action description, the distance MUST be calculated taking the object’s desired position into account as well.",
+            "PROVIDE an explicit, step-by-step explanation of how the timing for each action is computed.",
+            "At each step, verify that the proposed actions comply with all given rules.",
+            "At each step, verify that the proposed actions comply with all given rules.",
+            "If any check fails, make a correction and verify again. Repeat this process until every check is satisfied, including for the final plan.",
+            "Each final plan must be enclosed in '<plan>...</plan>' tags when presenting the solution.",
+            "Use the tags <plan> and </plan> EXCLUSIVELY to wrap the final plan; they MUST NOT appear anywhere else in your output.",
+            "The final plan must be formatted in JSON as follows: PLAN_TEMPLATE"
+        ]
+    }
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Scene",
+        "description": "Description of the scene and its content",
+        "value": [
+            {
+                "name": "Spatial Locations",
+                "description": "Spatial Locations in the scene where objects can be placed. Each location is associated with a description ('description' field) and is uniquely identified by a name ('name' field).",
+                "value": [
+                    {
+                        "name": "red_box",
+                        "description": "A red box, sealed with a red lid and designed to store objects of various sizes, shapes, and weights."
+                    },
+                    {
+                        "name": "yellow_box",
+                        "description": "A yellow box, sealed with a yellow lid and designed to store objects of various sizes, shapes, and weights."
+                    },
+                    {
+                        "name": "blue_box",
+                        "description": "A blue box, sealed with a blue lid and designed to store objects of various sizes, shapes, and weights."
+                    },
+                    {
+                        "name": "green_box",
+                        "description": "A green box, sealed with a green lid and designed to store objects of various sizes, shapes, and weights."
+                    }
+                ]
+            },
+            {
+                "name": "Objects",
+                "description": "A complete list of object types available in the scene is provided. For each type, a full list of features (in the 'features' field) and the available quantity (in the 'count' field) is included. Each feature is represented as an object of the form {'name': 'feature_name', 'value': feature_value}, where the 'value' can be either a string or a numerical value.",
+                "value": OBJECT_LIST
+            }
+        ]
+    },
+    {
+        "name": "Actions",
+        "description": "List of the only actions that can be taken to achieve the specified objective.",
+        "value": [
+            "PickAndPlace",
+            "OpenBox",
+            "CloseBox"
+        ]
+    },
+    {
+        "name": "Preferences",
+        "description": "Preferences of the agents to consider when responding to a request. Each preference can be seen as a soft constraint, meaning its fulfillment is not mandatory.",
+        "value": []
+    },
+    {
+        "name": "Directives",
+        "description": "List of rules to consider when responding to a request. Each rule represents a hard constraint, meaning its fulfillment is mandatory.",
+        "value": [
+            "None of the following rules can be violated.",
+            "At the start, each box is closed with its lid firmly in place.",
+            "At the end, each box must be re-sealed with its lid correctly placed on top.",
+            "Each box must contain at least one object of every color.",
+            "Objects that match the color of the box must be placed first.",
+            "Each box must contain at least 3 objects.",
+            "Each box must contain at least one parallelepiped.",
+            "Each box can contain at most 5 objects.",
+            "Lids must not be included in the total count of objects placed inside a box.",
+            "Every object can be used only once.",
+            "Specify the order in which each action must be performed.",
+            "Assign the same order value to all actions that can be performed simultaneously.",
+            "MAXIMIZE the number of actions performed simultaneously, considering infinite number of agents",
+            "At each step, verify that the proposed actions comply with all given rules.",
+            "If any check fails, make a correction and verify again. Repeat this process until every check is satisfied, including for the final plan.",
+            "Each final plan must be enclosed in '<plan>...</plan>' tags when presenting the solution.",
+            "Use the tags <plan> and </plan> EXCLUSIVELY to wrap the final plan; they MUST NOT appear anywhere else in your output.",
+            "The final plan must be formatted in JSON as follows: PLAN_TEMPLATE"
+        ]
+    }
+]

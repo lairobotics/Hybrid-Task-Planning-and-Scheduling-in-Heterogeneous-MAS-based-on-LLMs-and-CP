@@ -1,0 +1,18 @@
+[
+    {
+        "actionName": "...",
+        "actionOrder": "...",
+        "objectShape": "...",
+        "objectColor": "...",
+        "desiredPosition": {"start": [row, col], "end": [row, col]}
+    },
+    ...,
+    {
+        "actionName": "...",
+        "actionOrder": "...",
+        "objectID": "{color}_{shape}#{id}",
+        "objectShape": "...",
+        "objectColor": "...",
+        "desiredPosition": {"start": [row, col], "end": [row, col]}
+    }
+]

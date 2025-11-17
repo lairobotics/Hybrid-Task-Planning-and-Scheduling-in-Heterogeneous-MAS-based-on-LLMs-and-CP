@@ -1,0 +1,78 @@
+[
+    {
+        "name": "yellow_cube",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "yellow"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "count": 3,
+        "weight": 9
+    },
+    {
+        "name": "red_cube",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "red"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "count": 4,
+        "weight": 12
+    },
+    {
+        "name": "blue_cube",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "blue"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "count": 3,
+        "weight": 6
+    },
+    {
+        "name": "green_cube",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "green"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "count": 4,
+        "weight": 3
+    }
+]

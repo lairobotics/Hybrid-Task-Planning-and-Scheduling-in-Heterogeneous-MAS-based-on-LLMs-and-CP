@@ -1,0 +1,310 @@
+[
+    {
+        "name": "yellow_cube#1",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "yellow"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.2,
+            -0.3
+        ],
+        "weight": 9
+    },
+    {
+        "name": "red_cube#1",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "red"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.3,
+            -0.3
+        ],
+        "weight": 12
+    },
+    {
+        "name": "blue_cube#1",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "blue"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.4,
+            -0.3
+        ],
+        "weight": 6
+    },
+    {
+        "name": "green_cube#1",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "green"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.5,
+            -0.3
+        ],
+        "weight": 3
+    },
+    {
+        "name": "red_cube#2",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "red"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.2,
+            -0.2
+        ],
+        "weight": 12
+    },
+    {
+        "name": "yellow_cube#2",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "yellow"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.3,
+            -0.2
+        ],
+        "weight": 9
+    },
+    {
+        "name": "green_cube#2",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "green"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.4,
+            -0.2
+        ],
+        "weight": 3
+    },
+    {
+        "name": "blue_cube#2",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "blue"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.5,
+            -0.2
+        ],
+        "weight": 6
+    },
+    {
+        "name": "green_cube#3",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "green"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.2,
+            -0.1
+        ],
+        "weight": 3
+    },
+    {
+        "name": "blue_cube#3",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "blue"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.3,
+            -0.1
+        ],
+        "weight": 6
+    },
+    {
+        "name": "red_cube#3",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "red"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.4,
+            -0.1
+        ],
+        "weight": 12
+    },
+    {
+        "name": "yellow_cube#3",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "yellow"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.5,
+            -0.1
+        ],
+        "weight": 9
+    },
+    {
+        "name": "green_cube#4",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "green"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.6,
+            -0.2
+        ],
+        "weight": 3
+    },
+    {
+        "name": "red_cube#4",
+        "features": [
+            {
+                "name": "shape",
+                "value": "cube"
+            },
+            {
+                "name": "color",
+                "value": "red"
+            },
+            {
+                "name": "size",
+                "value": 1
+            }
+        ],
+        "position": [
+            0.6,
+            -0.3
+        ],
+        "weight": 12
+    }
+]

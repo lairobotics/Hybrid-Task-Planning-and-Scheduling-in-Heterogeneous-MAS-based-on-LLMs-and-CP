@@ -1,0 +1,120 @@
+[
+    {
+        "name": "Scene",
+        "description": "Description of the scene and its content",
+        "value": [
+            {
+                "name": "Spatial Locations",
+                "description": "Spatial locations in the scene where objects can be placed. Each location is defined as a grid and is uniquely identified by a name ('name' field), along with a description ('description' field) and a set of coordinates ('locations' field) that indicate where objects can be placed.",
+                "value": [
+                    {
+                        "name": "grid",
+                        "description": "A 4×4 grid, i.e., a grid composed of 4 rows and 4 columns. Row 4 and column 4 are referred to as the last row and last column, respectively. Each position within the grid is uniquely identified by a pair of integers. For example, the pair (i, j) represents the position at the i-th row and j-th column. The 'locations' field contains the list of such pairs that define the available positions in the grid.",
+                        "locations": [
+                            [
+                                1,
+                                1
+                            ],
+                            [
+                                1,
+                                2
+                            ],
+                            [
+                                1,
+                                3
+                            ],
+                            [
+                                1,
+                                4
+                            ],
+                            [
+                                2,
+                                1
+                            ],
+                            [
+                                2,
+                                2
+                            ],
+                            [
+                                2,
+                                3
+                            ],
+                            [
+                                2,
+                                4
+                            ],
+                            [
+                                3,
+                                1
+                            ],
+                            [
+                                3,
+                                2
+                            ],
+                            [
+                                3,
+                                3
+                            ],
+                            [
+                                3,
+                                4
+                            ],
+                            [
+                                4,
+                                1
+                            ],
+                            [
+                                4,
+                                2
+                            ],
+                            [
+                                4,
+                                3
+                            ],
+                            [
+                                4,
+                                4
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Objects",
+                "description": "A complete list of object types available in the scene is provided. For each type, a full list of features (in the 'features' field) and the available quantity (in the 'count' field) is included. Each feature is represented as an object of the form {'name': 'feature_name', 'value': feature_value}, where the 'value' can be either a string or a numerical value. The feature list also includes the 'size', which indicates the number of grid positions occupied by the object when placed in a specific location.",
+                "value": OBJECT_LIST
+            }
+        ]
+    },
+    {
+        "name": "Actions",
+        "description": "List of the only actions that can be taken to achieve the specified objective.",
+        "value": [
+            "PickAndPlace"
+        ]
+    },
+    {
+        "name": "Preferences",
+        "description": "Preferences of the agents to consider when responding to a request. Each preference can be seen as a soft constraint, meaning its fulfillment is not mandatory.",
+        "value": []
+    },
+    {
+        "name": "Directives",
+        "description": "List of rules to consider when responding to a request. Each rule represents a hard constraint, meaning its fulfillment is mandatory.",
+        "value": [
+            "None of the following rules can be violated.",
+            "Each position can be occupied by at most one object; no positions can be shared.",
+            "Every object can be used only once.",
+            "The bottom portion of the structure must occupy the lower rows of the grid.",
+            "Always begin structure assembly from the last row and then proceed upward.",
+            "Specify the order in which each action must be performed.",
+            "Assign the same order value to all actions that can be performed simultaneously.",
+            "MAXIMIZE the number of actions performed simultaneously, considering infinite number of agents",
+            "At each step, verify that the proposed actions comply with all given rules.",
+            "If any check fails, make a correction and verify again. Repeat this process until every check is satisfied, including for the final plan.",
+            "Each final plan must be enclosed in '<plan>...</plan>' tags when presenting the solution.",
+            "Use the tags <plan> and </plan> EXCLUSIVELY to wrap the final plan; they MUST NOT appear anywhere else in your output.",
+            "The final plan must be formatted in JSON as follows: PLAN_TEMPLATE, where 'start' and 'end' denote the first and last cells occupied by the object, respectively."
+        ]
+    }
+]
