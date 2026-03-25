@@ -1,0 +1,154 @@
+[
+  {
+    "id": "shot1",
+    "type": "shot",
+    "blocking_action": {
+      "temporarly": {
+        "name": "grasp",
+        "on_param": "what",
+        "when": "start"
+      },
+      "permanently": {
+        "name": "pour",
+        "on_param": "to",
+        "when": "start"
+      }
+    },
+    "release_action": {
+      "name": "leave",
+      "on_param": "what",
+      "when": "end"
+    }
+  },
+  {
+    "id": "shot2",
+    "type": "shot",
+    "blocking_action": {
+      "temporarly": {
+        "name": "grasp",
+        "on_param": "what",
+        "when": "start"
+      },
+      "permanently": {
+        "name": "pour",
+        "on_param": "to",
+        "when": "start"
+      }
+    },
+    "release_action": {
+      "name": "leave",
+      "on_param": "what",
+      "when": "end"
+    }
+  },
+  {
+    "id": "shot3",
+    "type": "shot",
+    "blocking_action": {
+      "temporarly": {
+        "name": "grasp",
+        "on_param": "what",
+        "when": "start"
+      },
+      "permanently": {
+        "name": "pour",
+        "on_param": "to",
+        "when": "start"
+      }
+    },
+    "release_action": {
+      "name": "leave",
+      "on_param": "what",
+      "when": "end"
+    }
+  },
+  {
+    "id": "shot4",
+    "type": "shot",
+    "blocking_action": {
+      "temporarly": {
+        "name": "grasp",
+        "on_param": "what",
+        "when": "start"
+      },
+      "permanently": {
+        "name": "pour",
+        "on_param": "to",
+        "when": "start"
+      }
+    },
+    "release_action": {
+      "name": "leave",
+      "on_param": "what",
+      "when": "end"
+    }
+  },
+  {
+    "id": "shaker1",
+    "type": "shaker",
+    "blocking_action": {
+      "temporarly": {
+        "name": "grasp",
+        "on_param": "what",
+        "when": "start"
+      },
+      "permanently": null
+    },
+    "release_action": {
+      "name": "leave",
+      "on_param": "what",
+      "when": "end"
+    }
+  },
+  {
+    "id": "ingredient1",
+    "type": "ingredient1",
+    "blocking_action": {
+      "temporarly": {
+        "name": "fill",
+        "on_param": "ingredient",
+        "when": "start"
+      },
+      "permanently": null
+    },
+    "release_action": {
+      "name": "fill",
+      "on_param": "ingredient",
+      "when": "end"
+    }
+  },
+  {
+    "id": "ingredient2",
+    "type": "ingredient2",
+    "blocking_action": {
+      "temporarly": {
+        "name": "fill",
+        "on_param": "ingredient",
+        "when": "start"
+      },
+      "permanently": null
+    },
+    "release_action": {
+      "name": "fill",
+      "on_param": "ingredient",
+      "when": "end"
+    }
+  },
+  {
+    "id": "ingredient3",
+    "type": "ingredient3",
+    "blocking_action": {
+      "temporarly": {
+        "name": "fill",
+        "on_param": "ingredient",
+        "when": "start"
+      },
+      "permanently": null
+    },
+    "release_action": {
+      "name": "fill",
+      "on_param": "ingredient",
+      "when": "end"
+    }
+  }
+]

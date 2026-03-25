@@ -1,0 +1,51 @@
+[
+  {
+    "id": "r_1",
+    "type": "robot",
+    "min_vel": 1,
+    "max_vel": 2.5,
+    "position": [
+      0,
+      0
+    ],
+    "workspace": null,
+    "pick": 5,
+    "place": 5,
+    "extra": 7,
+    "actions": "PaP"
+  },
+  {
+    "id": "r_2",
+    "type": "robot",
+    "min_vel": 1,
+    "max_vel": 2.5,
+    "position": [
+      -14,
+      -18
+    ],
+    "workspace": null,
+    "pick": 5,
+    "place": 5,
+    "extra": 7,
+    "actions": "PaP"
+  },
+  {
+    "id": "h_1",
+    "type": "human",
+    "min_vel": 3,
+    "max_vel": 3,
+    "position": [
+      -14,
+      -9
+    ],
+    "workspace": null,
+    "pick": 5,
+    "place": 5,
+    "extra": 0,
+    "actions": [
+      "PaP",
+      "OpenBox",
+      "CloseBox"
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "name": "agent0",
+    "bimanual": 1,
+    "hand_dynamics": [
+      {
+        "action": "grasp",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "leave",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      }
+    ]
+  },
+  {
+    "name": "agent1",
+    "bimanual": 1,
+    "hand_dynamics": [
+      {
+        "action": "grasp",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "leave",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      }
+    ]
+  },
+  {
+    "name": "agent2",
+    "bimanual": 1,
+    "hand_dynamics": [
+      {
+        "action": "grasp",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "leave",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      }
+    ]
+  },
+  {
+    "name": "agent3",
+    "bimanual": 1,
+    "hand_dynamics": [
+      {
+        "action": "grasp",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "leave",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "fill",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "clean",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "minus", "value": 1 },
+        "when": "start"
+      },
+      {
+        "action": "shake",
+        "effect": { "op": "plus", "value": 1 },
+        "when": "end"
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "resource_type": "shot",
+    "constraining_policy": null,
+    "state": [
+      {
+        "name": "clean",
+        "type": "boolean",
+        "values": [
+          0,
+          1
+        ],
+        "initial_value": 1,
+        "reset_action": "clean",
+        "dynamics": [
+          {
+            "action": "fill",
+            "on_param": "what",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "pour",
+            "on_param": "to",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          }
+        ]
+      },
+      {
+        "name": "level",
+        "type": "numeric",
+        "values": [
+          0,
+          1
+        ],
+        "initial_value": 0,
+        "reset_action": "empty",
+        "dynamics": [
+          {
+            "action": "fill",
+            "on_param": "what",
+            "effect": {
+              "op": "plus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "pour",
+            "on_param": "from",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "pour",
+            "on_param": "to",
+            "effect": {
+              "op": "plus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "empty",
+            "on_param": "what",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resource_type": "shaker",
+    "constraining_policy": "mission",
+    "state": [
+      {
+        "name": "clean",
+        "type": "boolean",
+        "values": [
+          0,
+          1
+        ],
+        "initial_value": 1,
+        "reset_action": "clean",
+        "dynamics": [
+          {
+            "action": "pour",
+            "on_param": "to",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          }
+        ]
+      },
+      {
+        "name": "level",
+        "type": "numeric",
+        "values": [
+          0,
+          1,
+          2
+        ],
+        "initial_value": 0,
+        "reset_action": "empty",
+        "dynamics": [
+          {
+            "action": "pour",
+            "on_param": "to",
+            "effect": {
+              "op": "plus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "pour",
+            "on_param": "from",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "empty",
+            "on_param": "what",
+            "effect": {
+              "op": "minus",
+              "value": 1
+            },
+            "when": "end"
+          },
+          {
+            "action": "empty",
+            "on_param": "what",
+            "effect": {
+              "op": "minus",
+              "value": 2
+            },
+            "when": "end"
+          }
+        ]
+      }
+    ]
+  }
+]

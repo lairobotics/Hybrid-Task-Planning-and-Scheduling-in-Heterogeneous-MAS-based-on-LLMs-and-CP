@@ -1,0 +1,14 @@
+[
+  {
+    "id": "white",
+    "start": [
+      -10,
+      -10
+    ],
+    "rows": 5,
+    "cols": 5,
+    "scale": 20,
+    "row_axis": "-y",
+    "col_axis": "-x"
+  }
+]

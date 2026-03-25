@@ -1,0 +1,74 @@
+[
+  {
+    "name": "grasp",
+    "duration": {
+      "type": "fixed",
+      "base_value": 5
+    },
+    "params": [
+      "what"
+    ]
+  },
+  {
+    "name": "leave",
+    "duration": {
+      "type": "fixed",
+      "base_value": 5
+    },
+    "params": [
+      "what"
+    ]
+  },
+  {
+    "name": "fill",
+    "duration": {
+      "type": "fixed",
+      "base_value": 5
+    },
+    "params": [
+      "what",
+      "ingredient"
+    ]
+  },
+  {
+    "name": "pour",
+    "duration": {
+      "type": "fixed",
+      "base_value": 5
+    },
+    "params": [
+      "from",
+      "to"
+    ]
+  },
+  {
+    "name": "shake",
+    "duration": {
+      "type": "fixed",
+      "base_value": 5
+    },
+    "params": [
+      "what"
+    ]
+  },
+  {
+    "name": "clean",
+    "duration": {
+      "type": "variable",
+      "base_value": 5
+    },
+    "params": [
+      "what"
+    ]
+  },
+  {
+    "name": "empty",
+    "duration": {
+      "type": "variable",
+      "base_value": 5
+    },
+    "params": [
+      "what"
+    ]
+  }
+]

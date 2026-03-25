@@ -1,0 +1,105 @@
+[
+  {
+    "id": "grasp-shaker",
+    "action": "grasp",
+    "objects": [
+      "shaker"
+    ]
+  },
+  {
+    "id": "grasp-shot",
+    "action": "grasp",
+    "objects": [
+      "shot"
+    ]
+  },
+  {
+    "id": "leave-shaker",
+    "action": "leave",
+    "objects": [
+      "shaker"
+    ]
+  },
+  {
+    "id": "leave-shot",
+    "action": "leave",
+    "objects": [
+      "shot"
+    ]
+  },
+  {
+    "id": "fill-shot-with-ingredient1",
+    "action": "fill",
+    "objects": [
+      "shot",
+      "ingredient1"
+    ]
+  },
+  {
+    "id": "fill-shot-with-ingredient2",
+    "action": "fill",
+    "objects": [
+      "shot",
+      "ingredient2"
+    ]
+  },
+  {
+    "id": "fill-shot-with-ingredient3",
+    "action": "fill",
+    "objects": [
+      "shot",
+      "ingredient3"
+    ]
+  },
+  {
+    "id": "pour-shaker-to-shot",
+    "action": "pour",
+    "objects": [
+      "shaker",
+      "shot"
+    ]
+  },
+  {
+    "id": "pour-shot-to-shaker",
+    "action": "pour",
+    "objects": [
+      "shot",
+      "shaker"
+    ]
+  },
+  {
+    "id": "shake-shaker",
+    "action": "shake",
+    "objects": [
+      "shaker"
+    ]
+  },
+  {
+    "id": "clean-shaker",
+    "action": "clean",
+    "objects": [
+      "shaker"
+    ]
+  },
+  {
+    "id": "clean-shot",
+    "action": "clean",
+    "objects": [
+      "shot"
+    ]
+  },
+  {
+    "id": "empty-shaker",
+    "action": "empty",
+    "objects": [
+      "shaker"
+    ]
+  },
+  {
+    "id": "empty-shot",
+    "action": "empty",
+    "objects": [
+      "shot"
+    ]
+  }
+]

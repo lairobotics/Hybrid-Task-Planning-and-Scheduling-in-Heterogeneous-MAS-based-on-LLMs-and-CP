@@ -1,0 +1,189 @@
+[
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 1,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        5,
+        1
+      ],
+      "end": [
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 1,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        5,
+        5
+      ],
+      "end": [
+        5,
+        5
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 2,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        4,
+        1
+      ],
+      "end": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 2,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        4,
+        5
+      ],
+      "end": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 3,
+    "objectName": "green_parallelepiped",
+    "objectShape": "parallelepiped",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        3,
+        1
+      ],
+      "end": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 3,
+    "objectName": "blue_cube",
+    "objectShape": "cube",
+    "objectColor": "blue",
+    "desiredPosition": {
+      "start": [
+        3,
+        4
+      ],
+      "end": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 3,
+    "objectName": "yellow_cube",
+    "objectShape": "cube",
+    "objectColor": "yellow",
+    "desiredPosition": {
+      "start": [
+        3,
+        5
+      ],
+      "end": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 4,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        2,
+        1
+      ],
+      "end": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 4,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        2,
+        5
+      ],
+      "end": [
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 5,
+    "objectName": "red_cube",
+    "objectShape": "cube",
+    "objectColor": "red",
+    "desiredPosition": {
+      "start": [
+        1,
+        1
+      ],
+      "end": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "actionName": "PickAndPlace",
+    "actionOrder": 5,
+    "objectName": "green_cube",
+    "objectShape": "cube",
+    "objectColor": "green",
+    "desiredPosition": {
+      "start": [
+        1,
+        5
+      ],
+      "end": [
+        1,
+        5
+      ]
+    }
+  }
+]

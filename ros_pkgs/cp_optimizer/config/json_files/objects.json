@@ -1,0 +1,642 @@
+[
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -25.938683904954942,
+      28.115838741512384
+    ],
+    "id": "red_cube#1"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -122.22184571890915,
+      28.267517122780387
+    ],
+    "id": "yellow_cube#1"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -51.469705528442674,
+      11.95080809998819
+    ],
+    "id": "blue_cube#1"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -101.01024935861322,
+      20.937630384099677
+    ],
+    "id": "green_cube#1"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -5.9490430391983296,
+      29.297770703985531
+    ],
+    "id": "red_cube#2"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -5.9966272459876109,
+      19.707512974456826
+    ],
+    "id": "yellow_cube#2"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -27.960734355567979,
+      12.837726772544308
+    ],
+    "id": "blue_cube#2"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -80.953420432321508,
+      28.314710503781342
+    ],
+    "id": "green_cube#2"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -44.977078319911712,
+      25.154802611566669
+    ],
+    "id": "red_cube#3"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -35.961454462511739,
+      17.844540390683363
+    ],
+    "id": "yellow_cube#3"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -41.153547677254778,
+      10.636656927548414
+    ],
+    "id": "blue_cube#3"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -101.23078210547541,
+      10.923427812623078
+    ],
+    "id": "green_cube#3"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -6.9689131626303151,
+      10.688921610058175
+    ],
+    "id": "red_cube#4"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -78.575789648104248,
+      17.63116914186017
+    ],
+    "id": "yellow_cube#4"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -32.827649659139666,
+      25.903998022741263
+    ],
+    "id": "blue_cube#4"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -113.837835362387,
+      19.795287915764622
+    ],
+    "id": "green_cube#4"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -123.34032458182728,
+      19.967281039642859
+    ],
+    "id": "red_cube#5"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -58.062514862831165,
+      14.476238789822739
+    ],
+    "id": "yellow_cube#5"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -69.166012766880073,
+      23.981534453133719
+    ],
+    "id": "blue_cube#5"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -15.273544644988206,
+      29.185828504108887
+    ],
+    "id": "green_cube#5"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -90.767669011180459,
+      26.616572557925817
+    ],
+    "id": "red_parallelepiped#1"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -129.38039946117109,
+      11.079002373332143
+    ],
+    "id": "yellow_parallelepiped#1"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -138.33371026982621,
+      16.742452887977631
+    ],
+    "id": "blue_parallelepiped#1"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -107.94322437964536,
+      28.266747230033392
+    ],
+    "id": "green_parallelepiped#1"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -64.63205906359201,
+      29.922694332537709
+    ],
+    "id": "red_parallelepiped#2"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -139.35120862123057,
+      25.498209294230048
+    ],
+    "id": "yellow_parallelepiped#2"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -119.62454274613961,
+      12.721371174173274
+    ],
+    "id": "blue_parallelepiped#2"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -18.299090930387493,
+      21.594091747311403
+    ],
+    "id": "green_parallelepiped#2"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -83.746875274728154,
+      11.519333833816837
+    ],
+    "id": "red_parallelepiped#3"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -107.13081212786312,
+      17.063171424441421
+    ],
+    "id": "yellow_parallelepiped#3"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -49.31556516091706,
+      19.018474128618898
+    ],
+    "id": "blue_parallelepiped#3"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -26.378735840453203,
+      20.656511775989095
+    ],
+    "id": "green_parallelepiped#3"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -90.89820549923634,
+      -191.21996876000227
+    ],
+    "id": "red_cube#6"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -17.368006390982274,
+      -198.99687314203155
+    ],
+    "id": "yellow_cube#6"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -52.853487959828158,
+      -198.25910590937167
+    ],
+    "id": "blue_cube#6"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -110.916079017376,
+      -203.97507339441017
+    ],
+    "id": "green_cube#6"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -74.0707312075373,
+      -205.39023679576883
+    ],
+    "id": "red_cube#7"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -21.796769022645535,
+      -206.104714208659
+    ],
+    "id": "yellow_cube#7"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -13.316664384814999,
+      -190.4050324328783
+    ],
+    "id": "blue_cube#7"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -103.87094257231064,
+      -201.82560307774895
+    ],
+    "id": "green_cube#7"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -56.714549638794,
+      -204.75576504438308
+    ],
+    "id": "red_cube#8"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -80.616653640066986,
+      -199.84283430677763
+    ],
+    "id": "yellow_cube#8"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -128.02778840739384,
+      -204.75035530603336
+    ],
+    "id": "blue_cube#8"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -71.594743667498918,
+      -198.42949877953123
+    ],
+    "id": "green_cube#8"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -5.16760449983218,
+      -199.06388562522065
+    ],
+    "id": "red_cube#9"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -67.040983687439791,
+      -205.36811226582952
+    ],
+    "id": "yellow_cube#9"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -44.921024278795329,
+      -202.08969568662815
+    ],
+    "id": "blue_cube#9"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -134.71655872646269,
+      -192.29663983595049
+    ],
+    "id": "green_cube#9"
+  },
+  {
+    "type": "cube",
+    "color": "red",
+    "weight": 12,
+    "position": [
+      -120.88256077024825,
+      -195.5754500283652
+    ],
+    "id": "red_cube#10"
+  },
+  {
+    "type": "cube",
+    "color": "yellow",
+    "weight": 9,
+    "position": [
+      -39.894809023902823,
+      -191.92558878887368
+    ],
+    "id": "yellow_cube#10"
+  },
+  {
+    "type": "cube",
+    "color": "blue",
+    "weight": 6,
+    "position": [
+      -27.231480565844009,
+      -198.46556968770631
+    ],
+    "id": "blue_cube#10"
+  },
+  {
+    "type": "cube",
+    "color": "green",
+    "weight": 3,
+    "position": [
+      -134.05964074989618,
+      -208.57109070798714
+    ],
+    "id": "green_cube#10"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -38.858457068642082,
+      -207.00269115044065
+    ],
+    "id": "red_parallelepiped#4"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -87.862636392224829,
+      -206.03763194914052
+    ],
+    "id": "yellow_parallelepiped#4"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -63.298073829921734,
+      -191.14526031446132
+    ],
+    "id": "blue_parallelepiped#4"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -81.515825395667292,
+      -190.33895067060288
+    ],
+    "id": "green_parallelepiped#4"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -97.796307180310833,
+      -195.97802488198147
+    ],
+    "id": "red_parallelepiped#5"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -0.12874473340951909,
+      -206.57757867287137
+    ],
+    "id": "yellow_parallelepiped#5"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -24.5873226635631,
+      -190.346732005561
+    ],
+    "id": "blue_parallelepiped#5"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -80.796003525988169,
+      -208.11541322224531
+    ],
+    "id": "green_parallelepiped#5"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "red",
+    "weight": 36,
+    "position": [
+      -50.605693841942696,
+      -209.32792327867142
+    ],
+    "id": "red_parallelepiped#6"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "yellow",
+    "weight": 27,
+    "position": [
+      -118.48805953721708,
+      -204.37989394932259
+    ],
+    "id": "yellow_parallelepiped#6"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "blue",
+    "weight": 18,
+    "position": [
+      -50.720726269895636,
+      -190.84612120316834
+    ],
+    "id": "blue_parallelepiped#6"
+  },
+  {
+    "type": "parallelepiped",
+    "color": "green",
+    "weight": 9,
+    "position": [
+      -11.761225821600448,
+      -209.97697885741786
+    ],
+    "id": "green_parallelepiped#6"
+  }
+]

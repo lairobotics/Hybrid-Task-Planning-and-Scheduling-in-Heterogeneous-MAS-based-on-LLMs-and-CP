@@ -1,0 +1,488 @@
+[
+  {
+    "cocktail": "cocktail1",
+    "steps": [
+      {
+        "step": 1,
+        "action": "grasp",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [],
+        "same_agent": null
+      },
+      {
+        "step": 2,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          1
+        ],
+        "same_agent": 1
+      },
+      {
+        "step": 3,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient1"
+        },
+        "after": [
+          2
+        ],
+        "same_agent": 2
+      },
+      {
+        "step": 4,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          3
+        ],
+        "same_agent": 3
+      },
+      {
+        "step": 5,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          4
+        ],
+        "same_agent": 4
+      },
+      {
+        "step": 6,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient3"
+        },
+        "after": [
+          5
+        ],
+        "same_agent": 5
+      },
+      {
+        "step": 7,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          6
+        ],
+        "same_agent": 6
+      },
+      {
+        "step": 8,
+        "action": "leave",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          7
+        ],
+        "same_agent": 7
+      },
+      {
+        "step": 9,
+        "action": "grasp",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          7
+        ],
+        "same_agent": null
+      },
+      {
+        "step": 10,
+        "action": "shake",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          9
+        ],
+        "same_agent": 9
+      },
+      {
+        "step": 11,
+        "action": "pour",
+        "params": {
+          "from": "shaker1",
+          "to": "shot2"
+        },
+        "after": [
+          10
+        ],
+        "same_agent": 10
+      },
+      {
+        "step": 12,
+        "action": "empty",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          11
+        ],
+        "same_agent": 11
+      },
+      {
+        "step": 13,
+        "action": "clean",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          12
+        ],
+        "same_agent": 12
+      },
+      {
+        "step": 14,
+        "action": "leave",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          13
+        ],
+        "same_agent": 13
+      }
+    ]
+  },
+  {
+    "cocktail": "cocktail2",
+    "steps": [
+      {
+        "step": 15,
+        "action": "grasp",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [],
+        "same_agent": null
+      },
+      {
+        "step": 16,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          15
+        ],
+        "same_agent": 15
+      },
+      {
+        "step": 17,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient2"
+        },
+        "after": [
+          16
+        ],
+        "same_agent": 16
+      },
+      {
+        "step": 18,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          17
+        ],
+        "same_agent": 17
+      },
+      {
+        "step": 19,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          18
+        ],
+        "same_agent": 18
+      },
+      {
+        "step": 20,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient3"
+        },
+        "after": [
+          19
+        ],
+        "same_agent": 19
+      },
+      {
+        "step": 21,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          20
+        ],
+        "same_agent": 20
+      },
+      {
+        "step": 22,
+        "action": "leave",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          21
+        ],
+        "same_agent": 21
+      },
+      {
+        "step": 23,
+        "action": "grasp",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          21
+        ],
+        "same_agent": null
+      },
+      {
+        "step": 24,
+        "action": "shake",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          23
+        ],
+        "same_agent": 23
+      },
+      {
+        "step": 25,
+        "action": "pour",
+        "params": {
+          "from": "shaker1",
+          "to": "shot3"
+        },
+        "after": [
+          24
+        ],
+        "same_agent": 24
+      },
+      {
+        "step": 26,
+        "action": "empty",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          25
+        ],
+        "same_agent": 25
+      },
+      {
+        "step": 27,
+        "action": "clean",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          26
+        ],
+        "same_agent": 26
+      },
+      {
+        "step": 28,
+        "action": "leave",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          27
+        ],
+        "same_agent": 27
+      }
+    ]
+  },
+  {
+    "cocktail": "cocktail3",
+    "steps": [
+      {
+        "step": 29,
+        "action": "grasp",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [],
+        "same_agent": null
+      },
+      {
+        "step": 30,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          29
+        ],
+        "same_agent": 29
+      },
+      {
+        "step": 31,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient1"
+        },
+        "after": [
+          30
+        ],
+        "same_agent": 30
+      },
+      {
+        "step": 32,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          31
+        ],
+        "same_agent": 31
+      },
+      {
+        "step": 33,
+        "action": "clean",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          32
+        ],
+        "same_agent": 32
+      },
+      {
+        "step": 34,
+        "action": "fill",
+        "params": {
+          "what": "shot1",
+          "ingredient": "ingredient2"
+        },
+        "after": [
+          33
+        ],
+        "same_agent": 33
+      },
+      {
+        "step": 35,
+        "action": "pour",
+        "params": {
+          "from": "shot1",
+          "to": "shaker1"
+        },
+        "after": [
+          34
+        ],
+        "same_agent": 34
+      },
+      {
+        "step": 36,
+        "action": "leave",
+        "params": {
+          "what": "shot1"
+        },
+        "after": [
+          35
+        ],
+        "same_agent": 35
+      },
+      {
+        "step": 37,
+        "action": "grasp",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          35
+        ],
+        "same_agent": null
+      },
+      {
+        "step": 38,
+        "action": "shake",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          37
+        ],
+        "same_agent": 37
+      },
+      {
+        "step": 39,
+        "action": "pour",
+        "params": {
+          "from": "shaker1",
+          "to": "shot4"
+        },
+        "after": [
+          38
+        ],
+        "same_agent": 38
+      },
+      {
+        "step": 40,
+        "action": "empty",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          39
+        ],
+        "same_agent": 39
+      },
+      {
+        "step": 41,
+        "action": "clean",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          40
+        ],
+        "same_agent": 40
+      },
+      {
+        "step": 42,
+        "action": "leave",
+        "params": {
+          "what": "shaker1"
+        },
+        "after": [
+          41
+        ],
+        "same_agent": 41
+      }
+    ]
+  }
+]

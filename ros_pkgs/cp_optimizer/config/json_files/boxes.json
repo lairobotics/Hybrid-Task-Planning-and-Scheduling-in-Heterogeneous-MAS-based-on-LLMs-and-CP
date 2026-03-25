@@ -1,0 +1,42 @@
+{
+  "ids": [
+    "red_box",
+    "yellow_box",
+    "blue_box",
+    "green_box"
+  ],
+  "description": [
+    {
+      "box": "red_box",
+      "position": [
+        1,
+        1
+      ],
+      "color": "red"
+    },
+    {
+      "box": "yellow_box",
+      "position": [
+        1,
+        5
+      ],
+      "color": "yellow"
+    },
+    {
+      "box": "blue_box",
+      "position": [
+        5,
+        1
+      ],
+      "color": "blue"
+    },
+    {
+      "box": "green_box",
+      "position": [
+        5,
+        5
+      ],
+      "color": "green"
+    }
+  ]
+}
